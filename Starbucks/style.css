@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -20px;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 10px 25px;
+    color: #017143;
+    font-weight: 900;
+}
+
+.text {
+    position: absolute;
+    align-items: center;
+    top: 200px;
+    left: 100px;
+}
+
+.text h2 {
+    font-size: 50px;
+    font-family: 'Mate SC', serif;
+}
+
+.text h2 span {
+    font-size: 70px;
+    color: #017143;
+    font-family: 'Mate SC', serif;
+    font-weight: 1200;
+}
+
+.text p {
+    font-weight: 600;
+}
+
+.starbuck {
+    position: relative;
+    width: 300px;
+    left: 900px;
+    top: 150px;
+}
+
+.text a {
+    text-decoration: none;
+    background-color: #017143;
+    padding: 8px 15px;
+    color: white;
+    font-weight: 500;
+    border-radius: 40px;
+    letter-spacing: 2px;
+}
+
+section .thumb {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+section .thumb li img {
+    width: 60px;
+}
+
+section .thumb li {
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0px 20px;
+}
+
+section .thumb li:hover {
+    transform: translateY(-20px);
+}
+
+.circle {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #017143;
+    clip-path: circle(600px at right 700px);
+}
+
+.social {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.social li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.social li img {
+    width: 30px;
+    filter: invert();
+}
+
+.social li .fb {
+    width: 20px;
+}

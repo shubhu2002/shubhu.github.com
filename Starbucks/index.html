@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>starbucks</title>
+</head>
+
+<body>
+    <div class="circle"></div>
+    <header>
+        <img src="logo.png" alt="logo" class="logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">What's New</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <div class="content">
+            <div class="text">
+                <h2>It's just not a Coffee <br> It's <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum suscipit sunt assumenda <br>magnam fugit dicta nam, dolorum ipsam tempora et quo temporibus mollitia quam <br> ea autem porro quisquam, deserunt reprehenderit.
+                </p><br><br>
+                <a href="#"> Learn More</a>
+            </div>
+            <img src="img1.png" alt="bucks" class="starbuck">
+
+            <ul class="thumb">
+                <li><img src="thumb1.png" alt="" onclick="imgSlide('img1.png'); colorChng('#017143')"></li>
+                <li><img src="thumb2.png" alt="" onclick="imgSlide('img2.png'); colorChng('#eb7495')"></li>
+                <li><img src="thumb3.png" alt="" onclick="imgSlide('img3.png'); colorChng('#d752b1')"></li>
+            </ul>
+            <ul class="social">\
+                <li>
+                    <a href="#"><img src="facebook.png" class="fb"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="instagram.png"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="twitter.png"></a>
+                </li>
+
+        </div>
+
+    </section>
+    <script type="text/javascript">
+        function imgSlide(anything) {
+            document.querySelector('.starbuck').src = anything;
+        }
+
+        function colorChng(color) {
+            const circle = document.querySelector('.circle')
+            circle.style.background = color;
+        }
+    </script>
+</body>
+
+</html>
